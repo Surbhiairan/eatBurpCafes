@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EatBurp1.iml" filepath="$PROJECT_DIR$/EatBurp1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EatBurp_.iml" filepath="$PROJECT_DIR$/EatBurp_.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eatburpLayout.iml" filepath="$PROJECT_DIR$/eatburpLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eatBurpLayout.iml" filepath="$PROJECT_DIR$/eatBurpLayout.iml" />
     </modules>
   </component>
 </project>
