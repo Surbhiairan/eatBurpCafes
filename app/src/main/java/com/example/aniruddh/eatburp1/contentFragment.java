@@ -23,6 +23,7 @@ public class contentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.content, container, false);
+
         cafe1Button = (ImageView) view.findViewById(R.id.person_photo1);
         cafe1Button.setOnClickListener(new View.OnClickListener() {
             @Override
