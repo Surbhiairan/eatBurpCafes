@@ -14,7 +14,7 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-import com.example.aniruddh.eatburp1.AnimalNames;
+import com.example.aniruddh.eatburp1.SearchListItems;
 import com.example.aniruddh.eatburp1.ListViewAdapter;
 import com.example.aniruddh.eatburp1.R;
 
@@ -27,8 +27,8 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
     ListView list;
     ListViewAdapter adapter;
     SearchView editsearch;
-    String[] animalNameList;
-    ArrayList<AnimalNames> arraylist = new ArrayList<AnimalNames>();
+    String[] searchListItemsList;
+    ArrayList<SearchListItems> arraylist = new ArrayList<SearchListItems>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,17 +37,16 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
 
         // Generate sample data
 
-        animalNameList = new String[]{"Lion", "Tiger", "Dog",
-                "Cat", "Tortoise", "Rat", "Elephant", "Fox",
-                "Cow","Donkey","Monkey"};
+        searchListItemsList = new String[]{"Pizza", "Cake", "Biryani",
+                 "Drinks", "Thuppa", "Momos", "Desserts"};
 
         // Locate the ListView in listview_main.xml
         list = (ListView) findViewById(R.id.listview);
 
-        for (int i = 0; i < animalNameList.length; i++) {
-            AnimalNames animalNames = new AnimalNames(animalNameList[i]);
+        for (int i = 0; i < searchListItemsList.length; i++) {
+            SearchListItems itemNames = new SearchListItems(searchListItemsList[i]);
             // Binds all strings into an array
-            arraylist.add(animalNames);
+            arraylist.add(itemNames);
         }
 
         // Pass results to ListViewAdapter Class
