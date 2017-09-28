@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = getIntent();
+        /*Intent intent = getIntent();
         String jsondata = intent.getStringExtra("userProfile");
-        Log.w("Jsondata", jsondata);
+        Log.w("Jsondata", jsondata);*/
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity
 
         //
 
-        TextView user_name = (TextView) findViewById(R.id.tv_name);
+       /* TextView user_name = (TextView) findViewById(R.id.tv_name);
         TextView user_email = (TextView) findViewById(R.id.tv_email);
 
         ImageView user_picture = (ImageView) findViewById(R.id.iv_picture);
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity
 
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
 
     }
 
@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
         // Retrieve the SearchView and plug it into SearchManager
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.action_search));
         SearchManager searchManager = (SearchManager) getSystemService(SEARCH_SERVICE);
@@ -204,4 +205,8 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    public void openSearchWindow(MenuItem item) {
+        startActivity(new Intent(MainActivity.this, SearchActivity.class));
+
+    }
 }

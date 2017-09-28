@@ -33,7 +33,7 @@ public class Main2Activity extends AppCompatActivity {
 
         tv.animate().setDuration(2000);
 
-        final Intent i= new Intent(this, SignUp.class);
+        final Intent i= new Intent(this, MainActivity.class);
 
 
         Thread timer = new Thread(){
