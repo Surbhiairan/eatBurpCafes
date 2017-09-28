@@ -14,8 +14,20 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.widget.ListView;
 
-public class SearchResultsActivity extends ActionBarActivity {
+import java.util.ArrayList;
+
+import static android.R.id.list;
+
+public class SearchResultsActivity extends ActionBarActivity implements SearchView.OnQueryTextListener {
+
+    // Declare Variables
+    ListView list;
+    ListViewAdapter adapter;
+    SearchView editsearch;
+    String[] animalNameList;
+    ArrayList<AnimalNames> arraylist = new ArrayList<AnimalNames>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +46,24 @@ public class SearchResultsActivity extends ActionBarActivity {
                 (SearchView) menu.findItem(R.id.action_search).getActionView();
         searchView.setSearchableInfo(
                 searchManager.getSearchableInfo(getComponentName()));
+        animalNameList = new String[]{"Lion", "Tiger", "Dog",
+                "Cat", "Tortoise", "Rat", "Elephant", "Fox",
+                "Cow","Donkey","Monkey"};
+
+        // Locate the ListView in listview_main.xml
+        list = (ListView) findViewById(R.id.listview);
+
+        for (int i = 0; i < animalNameList.length; i++) {
+            AnimalNames animalNames = new AnimalNames(animalNameList[i]);
+            // Binds all strings into an array
+            arraylist.add(animalNames);
+        }
+
+        // Pass results to ListViewAdapter Class
+        adapter = new ListViewAdapter(this, arraylist);
+
+        // Binds the Adapter to the ListView
+        list.setAdapter(adapter);
 
         return true;
     }
@@ -49,5 +79,17 @@ public class SearchResultsActivity extends ActionBarActivity {
             String query = intent.getStringExtra(SearchManager.QUERY);
             //use the query to search
         }
+    }
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        String text = newText;
+        adapter.filter(text);
+        return false;
     }
 }

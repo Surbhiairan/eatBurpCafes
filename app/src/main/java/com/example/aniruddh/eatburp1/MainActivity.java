@@ -21,11 +21,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 import static android.R.attr.fragment;
 
@@ -33,6 +36,8 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     JSONObject response, profile_pic_data, profile_pic_url;
+
+
 
 
     @Override
@@ -92,6 +97,12 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
         }*/
 
+
+        // Generate sample data
+
+
+
+
     }
 
 
@@ -111,11 +122,12 @@ public class MainActivity extends AppCompatActivity
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
 
+
+
         // Retrieve the SearchView and plug it into SearchManager
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.action_search));
         SearchManager searchManager = (SearchManager) getSystemService(SEARCH_SERVICE);
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-
 
         return true;
 
@@ -205,8 +217,5 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    public void openSearchWindow(MenuItem item) {
-        startActivity(new Intent(MainActivity.this, SearchActivity.class));
 
-    }
 }
