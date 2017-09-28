@@ -10,5 +10,7 @@
     <color name="darkGrey">#444444</color>
     <color name="black">#000000</color>
     <color name="orange">#fe7924</color>
+    <color name="appThemeColor">#ff8342</color>
+
 </resources>
 

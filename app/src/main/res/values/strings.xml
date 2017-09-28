@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EatBurp</string>
+    <string name="app_name">Eatburp</string>
 
     <string name="facebook_app_id">685939441603787</string>
     <string name="fb_login_protocol_scheme">fb685939441603787</string>
