@@ -108,7 +108,10 @@
                 </LinearLayout >
             </android.support.v7.widget.CardView >
 
-            <android.support.v7.widget.CardView
+
+
+
+        <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dip" >
@@ -137,7 +140,7 @@
                             android:padding="5dp"
                             android:singleLine="false"
                             android:textColor="@color/black"
-                            android:textColorHint="@color/darkGrey"
+                            android:textColorHint="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
                     </LinearLayout >
@@ -219,7 +222,7 @@
                         android:padding="5dp"
                         android:singleLine="false"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/darkGrey"
+                        android:textColorHint="@color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
                 </LinearLayout >
@@ -284,113 +287,239 @@
                         android:textStyle="bold"/>
 
                     <Button
-                        android:layout_width="150dp"
+                        android:layout_width="145dp"
                         android:layout_height="match_parent"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@drawable/addphoto"
                         android:padding="10dp"
                         android:layout_margin="3dp"
-                        android:text="Add a Photo" />
-
-
-
+                        android:text="Add a Photo"
+                        />
 
                 </LinearLayout>
-
-
-
             </LinearLayout >
         </android.support.v7.widget.CardView >
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="10dip">
+
             <LinearLayout
-                android:id="@+id/linearScrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="start|center_vertical"
+                        android:hint="CALL"
+                        android:paddingLeft="5dp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkGrey"
+                        android:textSize="15sp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="start|center_vertical"
+                        android:hint="0731 2431621"
+                        android:paddingLeft="5sp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkGrey"
+                        android:textSize="13sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cuisines"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="start|center_vertical"
+                        android:hint="CUISINES"
+                        android:paddingLeft="5dp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkGrey"
+                        android:textSize="15sp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="start|center_vertical"
+                        android:hint="Cafe , FastFood, Italian"
+                        android:paddingLeft="5sp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkGrey"
+                        android:textSize="13sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/types"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="start|center_vertical"
+                        android:hint="TYPES"
+                        android:paddingLeft="5dp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkGrey"
+                        android:textSize="15sp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="start|center_vertical"
+                        android:hint="Cafe , Quick Bites"
+                        android:paddingLeft="5sp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkGrey"
+                        android:textSize="13sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/avg_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="start|center_vertical"
+                        android:hint="AVERAGE"
+                        android:paddingLeft="5dp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkGrey"
+                        android:textSize="15sp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="start|center_vertical"
+                        android:hint="700/- for two(approx.)"
+
+                        android:paddingLeft="5sp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/darkGrey"
+                        android:textSize="13sp" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_margin="10dip" >
 
-                <android.support.v7.widget.CardView
+                <LinearLayout
+                    android:id="@+id/relativeLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dip" >
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
 
                     <LinearLayout
-                        android:id="@+id/relativeLayout2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical" >
+                        android:orientation="vertical"
+                        android:padding="5dp" >
 
-                        <LinearLayout
+                        <TextView
+                            android:id="@+id/Details21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:gravity="start|center_vertical"
+                            android:hint="Address"
+                            android:padding="5dp"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="normal|bold" />
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:gravity="start|center_vertical"
+                            android:hint="McLeodganj"
+                            android:padding="5dp"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/darkGrey"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/textView3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="5dp" >
+                            android:ellipsize="end"
 
-                            <TextView
-                                android:id="@+id/Details21"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.75"
-                                android:gravity="start|center_vertical"
-                                android:hint="Third"
-                                android:padding="5dp"
-                                android:singleLine="false"
-                                android:textColor="@color/orange"
-                                android:textColorHint="@color/orange"
-                                android:textSize="16sp"
-                                android:textStyle="normal" />
-
-                            <TextView
-                                android:id="@+id/txt1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.75"
-                                android:gravity="start|center_vertical"
-                                android:hint="cardview"
-                                android:padding="5dp"
-                                android:singleLine="false"
-                                android:textColor="@color/orange"
-                                android:textColorHint="@color/orange"
-                                android:textSize="16sp"
-                                android:textStyle="normal" />
-
-                            <TextView
-                                android:id="@+id/Details23"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ellipsize="end"
-                                android:gravity="start|center_vertical"
-                                android:padding="5dp"
-                                android:singleLine="true"
-                                android:text="cardview"
-                                android:textColor="@color/orange"
-                                android:textSize="10dp"
-                                android:textStyle="normal" />
-
-                            <TextView
-                                android:id="@+id/Details22"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ellipsize="end"
-                                android:gravity="start|center_vertical"
-                                android:padding="5dp"
-                                android:singleLine="true"
-                                android:text="cardview"
-                                android:textColor="@color/orange"
-                                android:textSize="10dp"
-                                android:textStyle="normal" />
-                        </LinearLayout >
+                            android:gravity="right"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:text="Maps And Directions"
+                            android:textColor="@color/orange"
+                            android:textSize="15dp"
+                            android:textStyle="normal|bold|italic" />
                     </LinearLayout >
-                </android.support.v7.widget.CardView >
-            </LinearLayout >
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="5dip"
-                android:hint="click"
-                android:padding="5dip" />
+                </LinearLayout >
+            </android.support.v7.widget.CardView >
         </LinearLayout >
+    </LinearLayout >
 </android.support.v4.widget.NestedScrollView>
     <!--
     <?xml version="1.0" encoding="utf-8"?>
