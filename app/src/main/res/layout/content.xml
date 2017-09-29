@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
 
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
@@ -46,32 +49,49 @@
                                 android:id="@+id/person_photo1"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
-                                android:background="@drawable/pasta"
-                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true"
                                 android:layout_alignParentRight="true"
-                                android:layout_alignParentEnd="true" />
-
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/pasta" />
 
                             <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Banana Leaf"
-                                android:textColor="@android:color/background_dark"
-                                android:id="@+id/textView5"
-                                android:layout_below="@+id/person_photo1"
                                 android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true" />
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/person_photo1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:text="Banana Leaf"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="ABC, Indore"
-                                android:textColor="@color/darkGrey"
-                                android:layout_below="@+id/textView5"
                                 android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true" />
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView5"
+                                android:paddingLeft="5dp"
+                                android:text="ABC, Indore"
+                                android:textColor="@color/darkGrey" />
 
 
                         </RelativeLayout>
@@ -104,25 +124,41 @@
                                 android:layout_alignParentTop="true"
                                 android:background="@drawable/pasta" />
 
-
                             <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/textView6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Mangosteen"
-                                android:textColor="@android:color/background_dark"
-                                android:layout_below="@+id/person_photo2"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
-                                android:id="@+id/textView6" />
+                                android:layout_below="@+id/person_photo2"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Mangosteen"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="ABC, Indore"
-                                android:textColor="@color/darkGrey"
-                                android:layout_below="@+id/textView6"
                                 android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true" />
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView6"
+                                android:paddingLeft="5dp"
+                                android:text="ABC, Indore"
+                                android:textColor="@color/darkGrey" />
 
 
                         </RelativeLayout>
@@ -153,25 +189,42 @@
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentEnd="true" />
-
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
 
                             <TextView
+                                android:id="@+id/textView8"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Chai Kappi"
-                                android:textColor="@android:color/background_dark"
-                                android:layout_below="@+id/person_photo3"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
-                                android:id="@+id/textView8" />
+                                android:layout_below="@+id/person_photo3"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Chai Kappi"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold" />
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="ABC, Indore"
-                                android:textColor="@color/darkGrey"
-                                android:layout_below="@+id/textView8"
                                 android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true" />
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView8"
+                                android:paddingLeft="5dp"
+                                android:text="ABC, Indore"
+                                android:textColor="@color/darkGrey" />
 
 
 
@@ -206,25 +259,41 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentEnd="true" />
 
-
                             <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/textView9"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Pitchers CafeBar"
-                                android:textColor="@android:color/background_dark"
-                                android:layout_below="@+id/person_photo4"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
-                                android:id="@+id/textView9" />
+                                android:layout_below="@+id/person_photo4"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Pitchers CafeBar"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="ABC, Indore"
-                                android:textColor="@color/darkGrey"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
-                                android:layout_below="@+id/textView9" />
+                                android:layout_below="@+id/textView9"
+                                android:paddingLeft="5dp"
+                                android:text="ABC, Indore"
+                                android:textColor="@color/darkGrey" />
 
 
                         </RelativeLayout>
@@ -256,25 +325,41 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentEnd="true" />
 
-
                             <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/textView10"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Crossword"
-                                android:textColor="@android:color/background_dark"
-                                android:layout_below="@+id/person_photo5"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
-                                android:id="@+id/textView10" />
+                                android:layout_below="@+id/person_photo5"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Crossword"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ABC, Indore"
-                                android:textColor="@color/darkGrey"
-                                android:layout_below="@+id/textView10"
                                 android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true" />
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView10"
+                                android:paddingLeft="5dp"
+                                android:text="ABC, Indore"
+                                android:textColor="@color/darkGrey" />
 
 
                         </RelativeLayout>
@@ -307,25 +392,41 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentEnd="true" />
 
-
                             <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/textView11"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="D Cafe"
-                                android:textColor="@android:color/background_dark"
-                                android:layout_below="@+id/person_photo6"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
-                                android:id="@+id/textView11" />
+                                android:layout_below="@+id/person_photo6"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:text="Buddies Cafe"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="ABC, Indore"
-                                android:textColor="@color/darkGrey"
-                                android:layout_below="@+id/textView11"
+                                android:layout_height="match_parent"
                                 android:layout_alignParentLeft="true"
-                                android:layout_alignParentStart="true" />
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/textView11"
+                                android:paddingLeft="5dp"
+                                android:text="ABC, Indore"
+                                android:textColor="@color/darkGrey" />
 
 
                         </RelativeLayout>
@@ -357,12 +458,27 @@
                                 android:layout_alignParentRight="true"
                                 android:layout_alignParentEnd="true" />
 
-
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mocha"
-                                android:textColor="@android:color/background_dark"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold"
                                 android:layout_below="@+id/person_photo7"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
@@ -372,6 +488,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="ABC, Indore"
+                                android:paddingLeft="5dp"
                                 android:textColor="@color/darkGrey"
                                 android:layout_below="@+id/textView12"
                                 android:layout_alignParentLeft="true"
@@ -408,12 +525,27 @@
                                 android:layout_alignParentTop="true"
                                 android:background="@drawable/pasta" />
 
-
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="TDS"
-                                android:textColor="@android:color/background_dark"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold"
                                 android:layout_below="@+id/person_photo8"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
@@ -423,6 +555,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="ABC, Indore"
+                                android:paddingLeft="5dp"
                                 android:textColor="@color/darkGrey"
                                 android:layout_below="@+id/textView13"
                                 android:layout_alignParentLeft="true"
@@ -458,14 +591,30 @@
                                 android:layout_alignParentTop="true"
                                 android:background="@drawable/pasta" />
 
-
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
                             <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="O2 Cafe"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold"
                             android:layout_below="@+id/person_photo9"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
                                 android:id="@+id/textView15" />
 
                             <TextView
@@ -473,6 +622,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="ABC, Indore"
                                 android:textColor="@color/darkGrey"
+                                android:paddingLeft="5dp"
                                 android:layout_below="@+id/textView15"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true" />
@@ -507,11 +657,26 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentTop="true" />
 
-
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/holo_blue_light"
+                                android:elevation="5dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="5dp"
+                                android:text="4.5"
+                                android:textColor="@color/cardview_light_background"
+                                android:textStyle="bold" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Buddies Cafe"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textStyle="bold"                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
                                 android:layout_below="@+id/textView14"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true" />
@@ -520,6 +685,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="ABC, Indore"
+                                android:paddingLeft="5dp"
                                 android:textColor="@color/darkGrey"
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
