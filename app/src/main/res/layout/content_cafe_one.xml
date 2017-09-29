@@ -14,101 +14,130 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/nameCardView"
+        <android.support.v7.widget.CardView
+            android:id="@+id/nameCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip">
+
+            <LinearLayout
+                android:id="@+id/relativeLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dip" >
+                android:orientation="horizontal"
+                android:weightSum="3">
 
                 <LinearLayout
-                    android:id="@+id/relativeLayout4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="3" >
+                    android:layout_weight="2.6"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:paddingTop="30dp"
+                        android:singleLine="true"
+                        android:text="Cafe Illiterati"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/Details1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="McLeodganj"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:layout_width="120dp"
+                        android:layout_height="1dp"
+                        android:background="@color/cardview_shadow_start_color" />
+
+                    <TextView
+                        android:id="@+id/openTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="Open Now- 11 AM to 12 Midnight"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:layout_width="220dp"
+                        android:layout_height="1dp"
+                        android:background="@color/cardview_shadow_start_color" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="2.6"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="@dimen/activity_horizontal_margin">
 
-                        <TextView
-                            android:id="@+id/Name"
-                            android:layout_width="match_parent"
+                        <ImageButton
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:ellipsize="end"
-                            android:fontFamily="sans-serif-condensed"
-                            android:gravity="center"
-                            android:padding="0dp"
-                            android:paddingTop="20dp"
-                            android:singleLine="true"
-                            android:text="Cafe Illiterati"
-                            android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@drawable/icons8call" />
 
-                        <TextView
-                            android:id="@+id/Details1"
-                            android:layout_width="match_parent"
+                        <ImageButton
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:ellipsize="end"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center_horizontal"
-                            android:padding="2dp"
-                            android:singleLine="true"
-                            android:text="McLeodganj"
-                            android:textColor="@color/darkGrey"
-                            android:textSize="20dp"
-                            android:textStyle="normal" />
-                        <TextView
-                            android:id="@+id/openTime"
-                            android:layout_width="match_parent"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@drawable/icons8comments" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:ellipsize="end"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center_horizontal"
-                            android:padding="2dp"
-                            android:singleLine="true"
-                            android:text="Open Now- 11 AM to 12 Midnight"
-                            android:textColor="@color/darkGrey"
-                            android:textSize="15dp"
-                            android:textStyle="normal" />
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@drawable/icons8camera2" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingBottom="10dp"
-                            android:paddingLeft="60dp"
-                            android:paddingTop="@dimen/activity_horizontal_margin">
+                        <ImageButton
+                            android:layout_width="63dp"
+                            android:layout_height="57dp"
+                            android:background="@android:color/transparent"
+                            android:padding="5dp"
+                            android:src="@drawable/icons8bookmark" />
 
-                            <ImageButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_call" />
-
-                            <ImageButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_review" />
-
-                            <ImageButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_bookmark" />
-
-                            <ImageButton
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/ic_camera" />
-
-                        </LinearLayout>
 
                     </LinearLayout>
-                </LinearLayout >
-            </android.support.v7.widget.CardView >
 
+                    <Button
+                        android:id="@+id/bookMealButton"
+                        android:layout_width="288dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/addphoto"
+                        android:elevation="10dp"
+                        android:padding="10dp"
+                        android:text="Book Your Meal"
+                        android:textColor="@color/cardview_light_background" />
 
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
 
         <android.support.v7.widget.CardView
@@ -139,7 +168,7 @@
                             android:hint="Menu"
                             android:padding="5dp"
                             android:singleLine="false"
-                            android:textColor="@color/black"
+                            android:textColor="@color/appThemeColor"
                             android:textColorHint="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -153,6 +182,7 @@
                         android:padding="5dp" >
 
                         <ImageView
+                            android:id="@+id/imageView3"
                             android:layout_width="50dp"
                             android:layout_height="70dp"
                             android:layout_marginRight="7dp"
@@ -293,6 +323,7 @@
                         android:padding="10dp"
                         android:layout_margin="3dp"
                         android:text="Add a Photo"
+                        android:textColor="@color/cardview_light_background"
                         />
 
                 </LinearLayout>
@@ -514,7 +545,7 @@
                             android:text="Maps And Directions"
                             android:textColor="@color/orange"
                             android:textSize="15dp"
-                            android:textStyle="normal|bold|italic" />
+                            android:textStyle="bold" />
                     </LinearLayout >
                 </LinearLayout >
             </android.support.v7.widget.CardView >
