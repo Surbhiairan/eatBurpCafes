@@ -81,10 +81,7 @@
             android:label="@string/title_activity_cafe_one"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SearchActivity" />
-        <activity
-            android:name=".BookMeal"
-            android:label="@string/title_activity_book_meal"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BookMeal"></activity>
     </application>
 
 </manifest>
